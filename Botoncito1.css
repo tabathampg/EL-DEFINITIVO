@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F8F4EC;
+}
+
+.boton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.boton a {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background: #402B3A;
+    color: #F8F4EC;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.contenedor a::before {
+    content: " ❤";
+    display: block;
+    margin: 13px 0;
+    transition: all ease-in-out .3s;
+}
+
+.contenedor a:hover::before {
+    margin-top: -44px;
+}
+
+.contenedor a::after {
+    content: " ❤ ";
+} 
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    
+}
